@@ -1,4 +1,10 @@
-main_div{
+.main_div{
     background-color: brown;
 align-content: center;
+}
+body{
+    background-color: aqua;
+}
+button{
+    color: blueviolet;
 }
