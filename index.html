@@ -1,19 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>YOUTH MEET 2k23</title>
-    <script src="main.js"></script>
-    <link rel="stylesheet" href="style.css">
+    <title>Login Form</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+
 </head>
 
 <body>
-    <h1>ST. ANTONY CHURCH, ARIMPUR</h1>
-<p>CLICK on the below link to pay......</p>
-    <a href="upi://pay?pa=cyriacgeorge152002@oksbi&pn=Cyriac George&am=50.00&cu=INR&aid=uGICAgIDzm77EIQ">CLICK TO PAY</a>
+    <h1>Login</h1>
+    <script src="script.js"></script>
+    <form onsubmit="return validateForm()"></formonsubmit>
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username"><br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password"><br>
+        <input type="submit" value="Submit">
+    </form>
 </body>
 
 </html>
