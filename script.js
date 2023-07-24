@@ -1,13 +1,27 @@
-function validateForm() {
-    // Get the input fields
-    var username = document.getElementById("username").value;
-    var password = document.getElementById("password").value;
+let currentResult = '';
 
-    // Check if the input fields are empty
-    if (username == "" || password == "") {
-        alert("Please fill in all fields");
-        return false;
-    } else {
-        return true;
+function appendToResult(value) {
+    currentResult += value;
+    updateResultDisplay();
+}
+
+function clearResult() {
+    currentResult = '';
+    updateResultDisplay();
+}
+
+function calculateResult() {
+    try {
+        const result = eval(currentResult);
+        currentResult = result.toString();
+        updateResultDisplay();
+    } catch (error) {
+        currentResult = 'Error';
+        updateResultDisplay();
     }
+}
+
+function updateResultDisplay() {
+    const resultDisplay = document.getElementById('result');
+    resultDisplay.value = currentResult;
 }
